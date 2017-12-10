@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Open+Sans|Roboto+Slab');
+
+/* General rules */
+body {
+  background-color: #1D8A8A;
+}
+main {
+  display : grid;
+}
+h1 {
+  font-family: 'Roboto Slab';
+  font-size: 2em;
+  text-align: center;
+}
+p {
+  font-family: 'Open Sans';
+  font-size: 1.05em;
+}
+section {
+  display: block;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+section p {
+  text-align: center;
+}
+/* Mobile size */
+#header {
+  min-height: 100px;
+}
+
+/* Desktop size */
+@media all and (min-width: 60em){
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section {
+    grid-column: 1/-1;
+  }
+  #header {
+    background-image: url('../images/header-photo-web.jpg');
+    min-height: 250px;
+  }
+}
