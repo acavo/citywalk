@@ -2,8 +2,17 @@
 
 /* General rules */
 
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/header4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 main {
-  display : grid;
+  display: grid;
 }
 h1 {
   font-family: 'Roboto Slab';
@@ -22,105 +31,20 @@ section {
 section p {
   text-align: center;
 }
-
-.nav {
-  background-color: #0c6291;
-  text-transform: uppercase;
-  height: 80px;
+#video {
+  display: block;
+  width: 100%;
+  margin: auto;
 }
-
-.nav ul {
-  padding-left: 0px!important;
-  -webkit-margin-after: 0em!important;
-  -webkit-margin-before: 0em!important;
-  -webkit-padding-start: 0px!important;
-}
-
-.nav {
-    max-height: 0;
-    overflow: hidden;
-    position: fixed;
-  }
-
-  .nav ul {
-      padding-left: 0px;
-      margin-bottom: auto;
-      list-style-type: none;
-      background-color: #0c6291;
-  }
-
-  .nav ul li {
-      font-size: 1em;
-      margin-bottom: auto;
-      width: 120px;
-  }
-
-  .nav ul a {
-      width: 120px;
-      text-decoration: none;
-      font-size: 1em;
-      color: white;
-      display: list-item;
-      padding: 10px;
-      padding-left: 15px;
-      width: 100vw;
-  }
-
-  .nav a:hover {
-      background: black;
-      color: white;
-      transition: all 1s;
-    }
-
-#frontimg{
-  width:100vw;
-  height:auto;
-}
-/* Mobile size */
-/*
-#header {
-  min-height: 100px;
-}
-*/
 
 /* Desktop size */
-@media all and (min-width: 60em){
 
-  .nav {
-      max-height: 6em;
-      /* text-align: center; */
-      width: 100%;
-      position: fixed;
-      top: 0px;
-  }
+@media all and (min-width: 60em) {
 
-  .nav a {
-      width: auto;
-      height: 100%;
-      margin: 0 0 0 0px;
-      top: 0px;
-      position: relative;
-  }
-
-  .nav ul {
-      width: 100%;
-      display: inline-block;
-      margin-bottom: auto;
-      list-style-type: none;
-      margin-left: 30px;
-  }
-
-  .nav li {
-      display: inline-block;
-      margin-right: 15px;
-      margin-top: 30px;
-
-  }
-  main {
+main {
     grid-template-columns: repeat(3, 1fr);
-    margin-top:40px;
   }
-  section {
+section {
     grid-column: 1/-1;
   }
 }
