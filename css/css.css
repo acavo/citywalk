@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(../images/header4.jpg) no-repeat center center fixed;
+  background: url(../images/header4-remastered.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,8 +16,11 @@ main {
 }
 h1 {
   font-family: 'Roboto Slab';
-  font-size: 2em;
+  color: white;
+  font-size: 4em;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 p {
   font-family: 'Open Sans';
@@ -26,15 +29,26 @@ p {
 section {
   display: block;
   width: 100%;
-  background-color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.6);
 }
 section p {
   text-align: center;
 }
+#video-container {
+  background-color: inherit;
+  margin-top: 3.5em;
+}
+/* Other aspect ratios can be: 1040x585 , 1120x630, 1360x765 */
 #video {
   display: block;
   width: 100%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  box-shadow: 0px 8px 35px 7px #000;
+}
+#topp {
+  margin-top: 3em;
 }
 
 /* Desktop size */
